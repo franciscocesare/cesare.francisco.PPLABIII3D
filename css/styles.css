@@ -632,17 +632,16 @@ video {
 
 header, footer{
   display: flex;
-  justify-content: justify-around;
+  justify-content: space-between;
   padding: 1vw;
   background-repeat: no-repeat;
   background-color: rgb(227, 231, 230);
 }
 
 header{
-  color: red;
   background-size: cover;
   position: -webkit-sticky;
-  position: sticky; /* queda clavado en el top 0*/
+  position: sticky; /* queda clavado en top 0*/
   top: 0;
 }
 
@@ -650,12 +649,8 @@ footer{
   margin-top: 20%;
 }
 
-footer img{
-  width: 70px;
-}
-
 header img{
-  width: 150px;
+  width: 130px;
 }
 
 nav ul{
@@ -703,11 +698,11 @@ nav a{
   background-color: whitesmoke;
 }
 
-.formulario #puertas{
+.formulario #detalles{
   display: flex;
 }
 
-#puertas img{
+#detalles img{
   width: 100px;
 }
 
@@ -791,7 +786,7 @@ tr:hover{
 @media (max-width: 800px){
   header, footer{
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   header img{

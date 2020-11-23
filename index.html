@@ -12,18 +12,18 @@
     <title>Parcial Tema 4</title>
 </head>
 
-<body class="w-full font-sans bg-teal-100">
-    <header class="w-full h-15">
+<body class="w-auto h-auto font-sans bg-teal-100">
+    <header class="w-auto h-auto ">
         <a href="/">
             <img src="image/potencia2.svg" alt="logo">
-    </a>
+        </a>
 
-        <nav class="w-full h-16 justify-around flex row lg:flex-row  sm:flex-col space-x-1">
+        <nav class="w-auto h-auto flex col lg:flex-col  sm:flex-col space-x-1">
             <ul></ul>
-                <li  class="btn-link btn hover:zoom px-3 flex-none hover:bg-teal-500"><a href="#">Nosotros</a></li>
-                <li  class="btn-link btn hover:zoom px-3 flex-none hover:bg-teal-500"><a href="#">Anuncios</a></li>
-                <li  class="btn-link btn hover:zoom px-3 flex-none hover:bg-teal-500"><a href="#">Blog</a></li>
-                <li  class="btn-link btn hover:zoom px-3 flex-none hover:bg-teal-500"><a href="#">Contacto</a></li>
+            <li class=" hover:zoom px-2 flex-none hover:bg-teal-500"><a href="#">Nosotros</a></li>
+            <li class=" hover:zoom px-2 flex-none hover:bg-teal-500"><a href="#">Anuncios</a></li>
+            <li class=" hover:zoom px-2 flex-none hover:bg-teal-500"><a href="#">Blog</a></li>
+            <li class=" hover:zoom px-2 flex-none hover:bg-teal-500"><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -35,40 +35,23 @@
         </div>
     </section>
 
-    <section class="container " id="dataIn">
+    <section class="container" id="dataIn">
         <form class="formulario" id="form">
             <label for="titulo">Titulo </label>
-            <input type="text" 
-            name="titulo" 
-            id="titulo" 
-            placeholder="Ingrese Titulo" 
-            data-validation="text"
-                required>
+            <input type="text" name="titulo" id="titulo" placeholder="Ingrese Titulo" data-validation="text" required>
             <label for="descripcion">Descripcion</label>
-            <input type="text" 
-            name="descripcion" 
-            id="descripcion" 
-            placeholder="Ingrese Descripcion"   
-            data-validation="alphanumeric" 
-            required>
-            
-                <fieldset>
+            <input type="text" name="descripcion" id="descripcion" placeholder="Ingrese Descripcion"
+                data-validation="alphanumeric" required>
+
+            <fieldset>
                 <p>Transaccion</p>
                 <label for="rdov">
-                    <input type="radio" 
-                    name="transaccion" 
-                    id="" 
-                    value="venta" 
-                    checked>
+                    <input type="radio" name="transaccion" id="" value="venta" checked>
                     Venta
                 </label>
 
                 <label for="rdoA">
-                    <input type="radio" 
-                    name="transaccion" 
-                    id="" 
-                    value="alquiler" 
-                    checked>
+                    <input type="radio" name="transaccion" id="" value="alquiler" checked>
                     Alquiler
                 </label>
             </fieldset>
@@ -76,9 +59,8 @@
 
 
             <label for="precio">Precio</label>
-            <input type="text" name="precio" id="precio" placeholder="Ingrese Precio" data-validation="number"
-                required>
-            <div id="puertas"> <!--MEJORAR ESTO ES MALISIMO-->
+            <input type="text" name="precio" id="precio" placeholder="Ingrese Precio" data-validation="number" required>
+            <div id="detalles">
                 <label for="puertas"><img src="image/puertas.png" alt=""></label>
                 <input type="number" name="puertas" id="puertas" min="2" max="5" placeholder="Puertas" required>
                 <label for="km"><img src="image/km.png" alt=""></label>
@@ -108,21 +90,17 @@
     </section>
 
     <footer>
-        <a href="/">
-            <img src="image/potencia2.svg" alt="logo">
-   
-    </a>
-        <nav class="flex justify-between space-x-5"> 
-            <ul>
-                <li class="hover:zoom"><i><i class="fa fa-facebook-official" aria-hidden="true"></i>Cars Sales</i> 
-                </li>
-                    <li class="hover:zoom"><i><i class="fa fa-instagram" aria-hidden="true"></i></i> @CarsSales
-                    </li>
-                    <li class="hover:zoom"><i><i class="fa fa-twitter" aria-hidden="true"></i></i> @CarsSales
-                          
+        
+        <nav class="w-auto h-auto flex space-x-1">
+            <ul></ul>
+            <li class=" hover:zoom px-2 flex-none hover:bg-teal-500"><a href="#">Nosotros</a></li>
+            <li class=" hover:zoom px-2 flex-none hover:bg-teal-500"><a href="#">Anuncios</a></li>
+            <li class=" hover:zoom px-2 flex-none hover:bg-teal-500"><a href="#">Blog</a></li>
+            <li class=" hover:zoom px-2 flex-none hover:bg-teal-500"><a href="#">Contacto</a></li>
             </ul>
         </nav>
-            </footer>
+        <span class="justify-end">Todos los derechos reservados 2020 &copy</span>
+    </footer>
 
 </body>
 
