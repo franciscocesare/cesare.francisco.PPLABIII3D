@@ -32,20 +32,19 @@ function inicializarManejadores(){
     divTabla = document.getElementById('divTabla');
 
     refreshList(listCars);
-    console.log(listCars);
+   // console.log(listCars);
     frm = document.forms[0];
     frm.addEventListener('submit', e =>{
         e.preventDefault();
-
-        
         const newCar = alta(frm, proximoId);
 
         if(newCar){
             listCars.push(newCar);
             proximoId++;
-            save(listCars, proximoId);
             refreshList(listCars);
+            save(listCars, proximoId);
         }
+        clean();
     });
 }
 
