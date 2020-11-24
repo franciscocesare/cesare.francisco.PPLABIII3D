@@ -83,6 +83,7 @@ export function clean(){
         frm.descripcion.value = "";
         frm.precio.value = "";
         frm.transaccion.value = "";
+        frm.color.value = ""; //agregado
         frm.puertas.value = "";
         frm.potencia.value = "";
         frm.km.value = "";

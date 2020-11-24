@@ -65,6 +65,7 @@ btnDelete.addEventListener('click', e =>{
     refreshList(listCars);
     clean();
     save(listCars);
+    alert("Eliminado correctamente")
 })
 
 btnEdit = document.getElementById('btnEdit');
@@ -78,6 +79,7 @@ btnEdit.addEventListener('click', e =>{
     auto.descripcion = frm.descripcion.value;
     auto.precio = frm.precio.value;
     auto.transaccion = frm.transaccion.value;
+    auto.color = frm.color.value;
     auto.puertas = frm.puertas.value;
     auto.km = frm.km.value;
     auto.potencia = frm.potencia.value;
@@ -85,5 +87,7 @@ btnEdit.addEventListener('click', e =>{
     refreshList(listCars);
     clean();
     save(listCars);
+    alert("Modificado correctamente")
+
 })
 

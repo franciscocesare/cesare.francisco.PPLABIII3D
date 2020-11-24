@@ -20,11 +20,14 @@ export function alta(frm, proximoId) {
         frm.descripcion.value,
         frm.precio.value,
         frm.transaccion.value,
+        frm.color.value,
         frm.puertas.value,
         frm.km.value,
         frm.potencia.value
     )
     return newCar;
+    //console.log(newCar);
+    alert("Alta Exitosa!");
 }
 
 export function save(listCars, proximoId = null) {
@@ -53,6 +56,7 @@ export function searchCar(id) {
                 frm.descripcion.value = element['descripcion'],
                 frm.precio.value = element['precio'],
                 frm.transaccion.value = element['transaccion'],
+                frm.color.value = element['color'],
                 frm.km.value = element['km'],
                 frm.puertas.value = element['puertas'],
                 frm.potencia.value = element['potencia']

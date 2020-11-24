@@ -30,7 +30,7 @@
 
     <section>
         <h1 class="text-4xl font-sans text-center bg-gray-500">Administracion</h1>
-        <div id="img">
+        <div class="hidden md:block" id="img">
 
         </div>
     </section>
@@ -43,20 +43,26 @@
             <input type="text" name="descripcion" id="descripcion" placeholder="Ingrese Descripcion"
                 data-validation="alphanumeric" required>
 
-            <fieldset>
+        <fieldset>
                 <p>Transaccion</p>
                 <label for="rdov">
-                    <input type="radio" name="transaccion" id="rdoV" value="venta" checked>
+                    <input type="radio" name="transaccion" id="rdoV" value="venta" checked required>
                     Venta
                 </label>
 
                 <label for="rdoA">
-                    <input type="radio" name="transaccion" id="rdoA" value="alquiler" checked>
+                    <input type="radio" name="transaccion" id="rdoA" value="alquiler" checked required>
                     Alquiler
                 </label>
             </fieldset>
-
-
+            <select name="color" required>
+                    <option value="" selected>Elija el color</option>
+                    <option value="blanco">Blanco</option>
+                    <option value="negro">Negro</option>
+                    <option value="rojo">Rojo</option>
+                    <option value="otros">Otros</option>  
+                
+            </select>
 
             <label for="precio">Precio</label>
             <input type="text" name="precio" id="precio" placeholder="Ingrese Precio" data-validation="number" required>
@@ -66,7 +72,7 @@
                 <label for="km"><img src="image/km.png" alt=""></label>
                 <input type="text" name="km" id="km" placeholder="kilometros" required>
                 <label for="potencia"><img src="image/potencia.png" alt=""></label>
-                <input type="number" name="potencia" id="potencia" min="100" max="180" placeholder="Potencia">
+                <input type="number" name="potencia" id="potencia" min="100" max="180" placeholder="Potencia" required>
             </div>
 
 

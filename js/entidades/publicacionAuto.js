@@ -2,29 +2,36 @@
 import Publicacion from './publicacion.js';
 
 export default class PublicacionAuto extends Publicacion{
-    constructor(id, titulo, descripcion, precio, transaccion, puertas, km, potencia){
+    constructor(id, titulo, descripcion, precio, transaccion, color, puertas, km, potencia){
         
         super(id, titulo, descripcion, precio);
 
         this.transaccion = transaccion;
+        this.color = color;
         this.puertas = puertas;
         this.km = km;
         this.potencia = potencia;
     }
 
-    set Transaccion(transaccion){          //actua como propiedad
+    set Transaccion(transaccion){          
         this.transaccion = transaccion;
     }
     get Transaccion(){       
         return this.transaccion;
     }
-    set Puertas(puertas){          //actua como propiedad
+    set Color(color){          //actua como propiedad
+        this.color = color;
+    }
+    get Color(){       
+        return this.color;
+    }
+    set Puertas(puertas){          
         this.puertas = puertas;
     }
     get Puertas(){       
         return this.puertas;
     }
-    set Km(km){          //actua como propiedad
+    set Km(km){          
         this.km = km;
     }
     get Km(){       
@@ -32,7 +39,7 @@ export default class PublicacionAuto extends Publicacion{
     }
 
 
-    set Potencia(potencia){          //actua como propiedad
+    set Potencia(potencia){          
         this.potencia = potencia;
     }
     get Potencia(){       
