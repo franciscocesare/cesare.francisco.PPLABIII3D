@@ -33,7 +33,6 @@ export function save(listCars, proximoId = null) {
 }
 
 export function refreshList(listCars) {
-    //divTabla.innerHTML = "<div class='sk-chase'><div class='sk-chase-dot'></div><div class='sk-chase-dot'></div><div class='sk-chase-dot'></div><div class='sk-chase-dot'></div><div class='sk-chase-dot'></div><div class='sk-chase-dot'></div></div>";
     divTabla.innerHTML = "<img src='image/spinner.gif' style=' margin-top: 5vw;'>";
     setTimeout(() => {
         if (divTabla.firstChild) {

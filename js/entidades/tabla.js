@@ -24,7 +24,6 @@ function crearCabecera(item){
         const th = document.createElement('th');
         const titulo = document.createTextNode(key);
         th.appendChild(titulo);
-        //th.textContent = key;
         tr.appendChild(th);
     }
 
@@ -63,13 +62,11 @@ function agregarManejadorTR(tr){
     if(tr){
         tr.addEventListener('click', function(e){
 
-        // ocultar boton agregar y mostrar los demas
         if(!flag){
             hideBtns();
             flag = true;
         }
 
-        //buscar por id
         idSelected = e.target.parentNode.getAttribute('data-id');
 
         searchCar(idSelected);
